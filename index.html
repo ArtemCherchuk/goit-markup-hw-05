@@ -24,7 +24,7 @@
       <nav class="menu-nav">
         <a href="./index.html" class="logo link">Web<span class="logo-studio">Studio</span> </a>
         <ul class="nav-list list">
-          <li class="item"><a href="./index.html" class="link-nav link">Studio</a></li>
+          <li class="item"><a href="./index.html" class="link-nav link current">Studio</a></li>
           <li class="item"><a href="./portfolio.html" class="link-nav link">Portfolio</a></li>
           <li class="item"><a href="" class="link-nav link">Contacts</a></li>
         </ul>
@@ -45,8 +45,20 @@
       <div class="container">
         <h1 class="main-title">Effective Solutions
           for Your Business</h1>
-        <button type="button" class="effective-button general-buttons">Order Service</button>
+        <button type="button" class="effective-button general-buttons" data-modal-open>Order Service</button>
       </div>
+
+      <!-- modal -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="close-button" data-modal-close>
+            <svg width="8" height="8" class="icon-close">
+              <use href="./images/icons.svg#icon-close-black-18dp"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
     </section>
     <!-- Our advantages -->
     <section class="section">
@@ -382,6 +394,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
