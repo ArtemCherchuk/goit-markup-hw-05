@@ -496,7 +496,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  height: 576px;
+  min-height: 576px;
   background: #FCFCFC;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -511,23 +511,29 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #E7E9FC;
   border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  transition: background-color var(--transition-dur);
+  transition: background-color var(--transition-dur),
+    border var(--transition-dur);
 }
 
 .icon-close {
   fill: currentColor;
-  transition: color var(--transition-dur);
+  transition: fill var(--transition-dur);
 }
 
 .close-button:hover,
 .close-button:focus {
   background-color: var(--link-hover);
+  border: none;
 }
 
 .close-button:hover .icon-close,
 .close-button:focus .icon-close {
-  color: #fff;
+  fill: #ffffff;
 }
 
 
